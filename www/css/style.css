@@ -56,6 +56,10 @@ padding-bottom: 10px;
 .imgdiv{
   height: 100%;
 }
+.imgdiv img, .list img {
+  width: 100%;
+  height: 100%;
+}
 
 .bar-footer {
   bottom: 0;
