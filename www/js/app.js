@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic','app.routes','starter.controllers','firebase','ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -16,7 +16,11 @@ angular.module('starter', ['ionic'])
       // from snapping when text inputs are focused. Ionic handles this internally for
       // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
+
     }
+    if(ionic.platform === "iOS") {
+      window.plugin.notification.local.promptForPermission();
+  }
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }

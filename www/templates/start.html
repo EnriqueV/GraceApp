@@ -1,0 +1,98 @@
+<ion-view title="Inicio" cache-view="false">
+
+
+
+
+
+         <style>
+    .bg{
+        background: url(img/app.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+
+
+      .item .item-content.activated{
+      background-color: #5E87B0;
+      color: #000;
+      }
+      .form{
+      float:left;
+      height:86%;
+      width:100%;
+      box-sizing:border-box;
+      padding: 20px;
+    }
+
+    .textbox{
+      height:50px;
+      width:100%;
+      border-radius:3px;
+      box-sizing:border-box;
+      padding:10px;
+    }
+
+    .textbox:focus{
+      outline:none;
+       color: #000;
+    }
+    select#xyz {
+        border: none;
+    }
+    .titulo {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10%;
+    font-family: 'Open Sans', sans-serif;
+  }
+    </style>
+
+
+
+      <ion-content class="bg" ng-controller="AppCtrl" style="background-color:#a578af;">
+          <div class="">
+              <form method="post" style="color:#fff;" class="form" ng-submit="doSignup()">
+                  <h2 style="text-align: center; color:#fff!important;" class="titulo" >Coloca la fecha de tu último período y
+                    selecciona el producto que desea usar</h2>
+                  <div class="list list-inset">
+                      <label class="item item-input">
+                        <i style="margin-top: -7px;" class="ion-android-calendar"></i>
+                       <input style="padding-left: 10px;border: 1px solid #fff;" type="date" placeholder="Fecha de Inicio de Ultimo Periodo" class="textbox" ng-model="dat"  ng-change="checkDate()"/>
+                      </label>
+                    </div>
+              </form>
+            <br>
+              <h3 style="text-align: center;" class="">Elije un Producto</h3>
+
+           <div  class="list">
+
+            <img src="img/1.png" alt="" width="412" height="84" ng-click="aler(1)">
+            <img src="img/2.png" alt="" width="412" height="74" ng-click="aler(2)">
+            <img style="padding-left:8%;" src="img/3.png" alt="" width="380" height="76" ng-click="aler(3)">
+                                    </div>
+                                    </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <a><button style="margin-top: 20px;width:94%;background-color:#F677C4;border-color:#F677C4;color: #fff;" class="button button-positive" ng-click="even()">
+                  Sincronizar calendario
+                </button></a>
+                <a ng-click="map()"><button style="margin-top:0px;width:94%;background-color:#9A3CBB;border-color:#FFAEBA;color: #fff;" class="button button-positive">
+                  Ver mapa - ¿dónde comprar?
+                  </button></a>
+                  <a ui-sref="pregunta"><button style="margin-top: 0px;width:94%;background-color:#DD2396;border-color:#DD2396;color: #fff;" class="button button-positive">
+                    Preguntas
+                    </button></a>
+                    <a ui-sref="about"><button style="margin-top: 0px;width:94%;background-color:#7B2481;border-color:#714982;color: #fff;" class="button button-positive">
+                      Acerca de Grace
+                    </button></a>
+
+                </div>
+
+
+
+      </ion-content>
+
+    </ion-view>

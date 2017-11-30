@@ -1,0 +1,148 @@
+<ion-view title="Preguntas" >
+
+
+
+                     <style>
+
+
+
+                  .item .item-content.activated{
+                  background-color: #5E87B0;
+                  color: #000;
+                  }
+                  .form{
+                  float:left;
+                  height:86%;
+                  width:100%;
+                  box-sizing:border-box;
+                  padding: 20px;
+                }
+
+                .textbox{
+                  height:50px;
+                  width:100%;
+                  border-radius:3px;
+                  box-sizing:border-box;
+                  padding:10px;
+                }
+
+                .textbox:focus{
+                  outline:none;
+                   color: #000;
+                }
+                select#xyz {
+                    border: none;
+                }
+                .titulo {
+        color: #fff;
+        font-size: 18px;
+
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        padding-left: 13%;
+      }
+      .ti {
+        color: #fff;
+        font-size: 18px;
+
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+
+      }
+      .titulo2 {
+        color: #fff;
+        font-size: 25px;
+
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        padding-left: 13%;
+
+      }
+      .tulo{
+        color: #fff;
+        font-size: 32px;
+        padding-top: 1%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+
+      .button-float{
+      background: #a578af !important;
+      color:white !important;
+      z-index: 12 !important;
+      position: absolute !important;
+      bottom: 673px !important;
+      right: 1px !important;
+      border-radius: 50% !important;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+      -webkit-transition: 0.2s linear !important;
+      transition: 0.2s linear !important;
+      -webkit-transition-property: -webkit-transform, all !important;
+      transition-property: transform, all !important;
+
+    }
+
+    .button-float:hover{
+      -webkit-transform: translate3d(0, -1px, 0)  !important;
+      transform: translate3d(0, -1px, 0) !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+        background: darken(#a578af, 10%) !important;
+    }
+                </style>
+
+
+           <br>
+                  <ion-content ng-controller="SlideController" style="background-color:#a578af;" scroll="false">
+                    <ion-slide-box pager-click="navSlide(index)">
+                      <!--Primer  Slide-->
+                      <ion-slide class="color-one">
+
+                        <div class="imgdiv">
+                          <!--<br>-->
+                          <img src="img/1pre.png" width="430px;">
+
+
+                        </div>
+                        <br>
+
+                      </ion-slide>
+
+                    <ion-slide class="color-one">
+                        <div class="imgdiv">
+
+                          <img src="img/con.png" width="430px;">
+
+                        </div>
+
+                      </ion-slide>
+                      <!--Tercer Slide-->
+                      <ion-slide class="color-one" ng-controller="AppCtrl">
+                        <div class="imgdiv" ng-click="go()">
+                          <!--<br>-->
+                          <img src="img/3pre.png" width="430px;" href="#/app/start">
+
+
+                        </div>
+
+                      </ion-slide>
+                      <!--Tercer Slide
+                      <ion-slide class="color-one" ng-controller="AppCtrl">
+                        <div class="imgdiv" ng-click="go()">
+
+                          <img src="img/4pre.png" width="430px;" href="#/app/start">
+
+
+                        </div>
+
+                      </ion-slide>-->
+
+                    </ion-slide-box><br>
+
+
+                    <button class="button button-float" ng-controller="AppCtrl"  ng-click="go()" >
+                        <i class="ion-chevron-left"></i>
+                      </button>
+                  </ion-content>
+                </ion-view>

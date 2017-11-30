@@ -1,0 +1,55 @@
+<ion-view title="Calendario" >
+
+
+    <div class="bar bar-header bar-light" ng-controller="AppCtrl">
+        <i class="icon icon-left ion-arrow-left-c" ng-click="back()"></i>
+      </div>
+
+           <style>
+      .bg{
+          background: url(img/app.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+
+
+        .item .item-content.activated{
+        background-color: #5E87B0;
+        color: #000;
+        }
+        .form{
+        float:left;
+        height:86%;
+        width:100%;
+        box-sizing:border-box;
+        padding: 20px;
+      }
+
+      .textbox{
+        height:50px;
+        width:100%;
+        border-radius:3px;
+        box-sizing:border-box;
+        padding:10px;
+      }
+
+      .textbox:focus{
+        outline:none;
+         color: #000;
+      }
+      select#xyz {
+          border: none;
+      }
+      </style>
+
+
+
+        <ion-content class="bg">
+
+          <iframe src="http://twinssbc.github.io/Ionic-Calendar/demo/#/tab/home" width="410" height="900">
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+        </ion-content>
+      </ion-view>

@@ -1,0 +1,97 @@
+<ion-view title=" Acerca de" >
+
+
+
+
+             <style>
+        .bg{
+            background: url(img/4pre.png) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          }
+
+
+          .item .item-content.activated{
+          background-color: #5E87B0;
+          color: #000;
+          }
+          .form{
+          float:left;
+          height:86%;
+          width:100%;
+          box-sizing:border-box;
+          padding: 20px;
+        }
+
+        .textbox{
+          height:50px;
+          width:100%;
+          border-radius:3px;
+          box-sizing:border-box;
+          padding:10px;
+        }
+
+        .textbox:focus{
+          outline:none;
+           color: #000;
+        }
+        select#xyz {
+            border: none;
+        }
+        .titulo {
+    color: #fff;
+    font-size: 16px;
+
+  }
+
+  .item {
+    border-color: #ddd;
+   background-color:none !important;
+    /* background-color: #fff; */
+  }
+  .tulo{
+    color: #fff;
+    font-size: 32px;
+    padding-top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+  .button-float{
+      background: #a578af !important;
+      color:white !important;
+      z-index: 12 !important;
+      position: absolute !important;
+      bottom: 673px !important;
+      right: 1px !important;
+      border-radius: 50% !important;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+      -webkit-transition: 0.2s linear !important;
+      transition: 0.2s linear !important;
+      -webkit-transition-property: -webkit-transform, all !important;
+      transition-property: transform, all !important;
+
+    }
+
+    .button-float:hover{
+      -webkit-transform: translate3d(0, -1px, 0)  !important;
+      transform: translate3d(0, -1px, 0) !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+        background: darken(#a578af, 10%) !important;
+    }
+        </style>
+
+
+
+          <ion-content class="bg" ng-controller="AppCtrl">
+
+   <div></div>
+   <button class="button button-float" ng-click="back()">
+      <i class="ion-chevron-left"></i>
+    </button>
+
+          </ion-content>
+        </ion-view>

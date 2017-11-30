@@ -1,0 +1,119 @@
+<ion-view title="Registrate" >
+
+
+       <style>
+  .bg{
+      background: url(img/login.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+
+    .item .item-content.activated{
+    background-color: #5E87B0;
+    color: #000;
+    }
+    .form{
+    float:left;
+    height:86%;
+    width:100%;
+    box-sizing:border-box;
+    padding: 20px;
+  }
+
+  .textbox{
+    height:50px;
+    width:100%;
+    border-radius:3px;
+    box-sizing:border-box;
+    padding:10px;
+  }
+
+  .textbox:focus{
+    outline:none;
+     color: #000;
+  }
+  select#xyz {
+      border: none;
+  }
+  </style>
+
+nombre apellido EDAD email y contraseña
+
+    <ion-content class="bg" ng-controller="AppCtrl" style="background-color:#a578af;">
+      <br>
+  <div class="">
+    <form method="post" style="color:#fff;" class="form" ng-submit="doSignup()">
+
+          <div class="list list-inset">
+            <label class="item item-input">
+              <i style="margin-top: -7px;"  class="ion-person"></i>
+              <input style="padding-left: 10px;border: 1px solid #fff; " type="text" placeholder="Nombre"  class="textbox" ng-model="name" required/>
+            </label>
+          </div>
+
+
+    <div class="list list-inset">
+            <label class="item item-input">
+              <i style="margin-top: -7px;" class="ion-person"></i>
+               <input style="padding-left: 10px;border: 1px solid #fff; " type="text" placeholder="Apellido"  ng-model="lname" required />
+            </label>
+          </div>
+
+          <div class="list list-inset">
+            <label class="item item-input">
+              <i style="margin-top: -7px;" class="ion-person"></i>
+               <input style="padding-left: 10px;border: 1px solid #fff; " type="text" placeholder="Edad"   required />
+            </label>
+          </div>
+
+
+
+
+
+
+
+    <div class="list list-inset">
+            <label class="item item-input">
+              <i  class="ion-email"></i>
+             <input style="padding-left: 10px;border: 1px solid #fff; " type="email" placeholder="Correo" class="ion-email" ng-model="email" required />
+            </label>
+          </div>
+
+          <div class="list list-inset">
+            <label class="item item-input">
+              <i  class="ion-ios-unlocked"></i>
+             <input style="padding-left: 10px;border: 1px solid #fff; " type="password" placeholder="Contraseña" class="ion-email"  required />
+            </label>
+          </div>
+
+
+
+
+
+
+
+
+
+     <!--   <input style="padding-left: 10px;border: 1px solid #fff; margin-top:20px;height:40px;" type="password"  placeholder="Re-enter Password" class="textbox" ng-model="signupData.reenterpass" /> -->
+
+
+
+        <button style="margin-top: 20px;width:100%;background-color:#714982;border-color:#714982;color: #fff;" class="button button-positive" ng-click="sing()">
+    Registrarme
+  </button>
+  <button style="margin-top: 20px;width:100%;background-color:#714982;border-color:#714982;color: #fff;" class="button button-positive" ui-sref="login">
+    Login
+  </button>
+
+      </form>
+  <!--<a href="#/app/playlists"><button style="width: 160px; border-color: #fff;background-color: #fff;color: #000; " class="button button-positive">
+    Cancel
+  </button></a>-->
+  </div>
+
+
+    </ion-content>
+  </ion-view>

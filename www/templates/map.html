@@ -1,0 +1,50 @@
+<ion-view title="Mapa" >
+    <div class="bar bar-header bar-light" ng-controller="AppCtrl">
+        <i class="icon icon-left ion-arrow-left-c" ng-click="back()"></i>
+      </div>
+             <style>
+        .bg{
+            background: url(img/app.png) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          }
+
+
+          .item .item-content.activated{
+          background-color: #5E87B0;
+          color: #000;
+          }
+          .form{
+          float:left;
+          height:86%;
+          width:100%;
+          box-sizing:border-box;
+          padding: 20px;
+        }
+
+        .textbox{
+          height:50px;
+          width:100%;
+          border-radius:3px;
+          box-sizing:border-box;
+          padding:10px;
+        }
+
+        .textbox:focus{
+          outline:none;
+           color: #000;
+        }
+        select#xyz {
+            border: none;
+        }
+        </style>
+
+
+
+          <ion-content class="bg" style="background-color:#a578af;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15506.188601073787!2d-89.1966779!3d13.685278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xefa8f76d3d79e349!2sLaboratorios+Arsal!5e0!3m2!1ses!2ssv!4v1507508438147" width="410" height="720" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          </ion-content>
+        </ion-view>

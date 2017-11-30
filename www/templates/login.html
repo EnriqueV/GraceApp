@@ -1,0 +1,139 @@
+<style>
+  .scroll-content {
+    background: url(img/login.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .item .item-content.activated {
+    background-color: #5E87B0;
+    color: #000;
+  }
+
+  .form {
+    float: left;
+    height: 86%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .textbox {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .textbox:focus {
+    outline: none;
+    color: #000;
+  }
+
+  p.titulo {
+    color: #fff;
+    font-size: 42px;
+    padding-top: 20%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .titu {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+  div.list.list-inset{
+    margin: 3%;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0.5px 0.5px #3
+  }
+  div.list.list-inset.inp{
+    box-shadow: inset 0px 0.5px 0.5px #333
+  }
+  div.contenedor{
+    margin: 2% 10% 2% 10%;
+    background-color: rgba(255,255,255,0.1);
+    background-image: url('img/bglogin.png');
+    background-position: center center;
+    background-size: cover;
+    padding: 5%;
+    border-radius: 10%;
+    box-shadow: 0px 0.5px 1px #fff;
+  }
+  label.item-input{
+    padding: 0 0 0 10px;
+  }
+  .list.list-inset input::placeholder {
+    color: #555;
+  }
+  .contenedor  label{
+    font-weight: 400;
+    color: #555;
+  }
+  .contenedor input[type="checkbox"]{
+ appearance: none;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ border: 1px solid #714982;
+ width: 12px;
+ height: 12px;
+ border-radius: 2px;
+ margin: 1px 3px 0 0;
+}
+.contenedor input[type="checkbox"]:checked{
+ background: #714982;
+ content: '\f046';
+}
+
+</style>
+<ion-view>
+<ion-content style="background-color:#a578af;">
+
+  <div class="" style="width:100%;margin: 0 auto;text-align: center;">
+    <p class="titulo">Únete a </p>
+    <img src="img/logo_grace2.png" alt="">
+
+  </div>
+  <br>
+  <div class="" ng-controller="AppCtrl">
+    <div class="contenedor">
+      <div class="list list-inset inp">
+        <label class="item item-input">
+    <i style="font-size:20px;" class="ion-at"></i>
+    <input style="padding-left: 5px;padding-bottom: 2px;" type="email" placeholder="Email" ng-model="email" required>
+  </label>
+      </div>
+      <div class="list list-inset inp">
+        <label class="item item-input">
+    <i style="font-size:20px;" class="ion-person"></i>
+    <input style="padding-left: 5px;padding-bottom: 2px;" type="password" placeholder="contraseña" ng-model="edad" required>
+  </label>
+      </div>
+      <div class="list list-inset" style="background:none;padding-top:15px;">
+        <input type="checkbox" id="remember" value="remember"> <label for="remember" class="titu">Recordar</label>
+      </div>
+
+
+
+
+
+      <div style="text-align: center;">
+        <a >
+          <button style="width:94%;background-color:#714982;border-color:#714982;color: #fff;" class="button button-positive" ng-click="login()">
+  Login
+</button>
+</a>
+      </div>
+    </div>
+
+    <p style="color:white;text-align:center;font-size:13px;" class="titu">No tienes una cuenta?<a style="text-decoration:none;" ui-sref="registro"><span style="color: rgb(134, 1, 161);"> Registrate</span></a>
+
+  </div>
+</ion-content>
+
+
+</ion-view>

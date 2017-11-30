@@ -1,0 +1,45 @@
+<ion-view style="background-color:#a578af;">
+
+    <style>
+    </style>
+
+    <ion-content ng-controller="SlideController" style="background-color:#a578af;" scroll="false">
+      <ion-slide-box pager-click="navSlide(index)">
+        <!--Primer  Slide-->
+        <ion-slide class="color-one">
+
+          <div class="imgdiv">
+            <!--<br>-->
+            <img src="img/img_grace1.jpg" width="430px;">
+
+
+          </div>
+          <br>
+
+        </ion-slide>
+        <!--segundo  Slide-->
+        <ion-slide class="color-one">
+          <div class="imgdiv">
+            <!--<br>-->
+            <img src="img/img_grace2.jpg" width="430px;">
+
+          </div>
+
+        </ion-slide>
+        <!--Tercer Slide-->
+        <ion-slide class="color-one" ng-controller="AppCtrl">
+          <div class="imgdiv" ng-click="go()">
+            <!--<br>-->
+            <img src="img/3_grace.png" width="430px;" href="#/app/start">
+
+
+          </div>
+
+        </ion-slide>
+
+      </ion-slide-box><br>
+      <br>
+    </ion-content>
+    <br>
+
+  </ion-view>
