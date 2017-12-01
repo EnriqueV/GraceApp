@@ -73,11 +73,11 @@ export default StyleSheet.create({
     'height': [{ 'unit': '%V', 'value': 1 }]
   },
   'imgdiv img': {
-    'width': [{ 'unit': '%V', 'value': 1 }],
+    'width': [{ 'unit': '%H', 'value': 1 }],
     'height': [{ 'unit': '%V', 'value': 1 }]
   },
   'list img': {
-    'width': [{ 'unit': '%V', 'value': 1 }],
+    'width': [{ 'unit': '%H', 'value': 1 }],
     'height': [{ 'unit': '%V', 'value': 1 }]
   },
   'bar-footer': {
